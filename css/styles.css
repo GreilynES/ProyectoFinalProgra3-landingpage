@@ -1,0 +1,439 @@
+body{
+  background-color:#F5F2E8;
+  display:flex;
+  flex-direction: column;
+  margin: 0%;
+}
+
+/* Header styles */
+.container{
+  min-height: auto;
+}
+
+.container-1 {
+  background-color: #151515;
+  min-height: 100vh;
+  max-height: 100vh;
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+  }
+
+  header {
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5.3125rem;
+    min-height: 5.3125rem;
+    max-height: 5.3125rem;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .menu1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.2rem;
+    border-bottom: 0.015625rem solid #5a5649;
+    width: 100%;
+    height: 1.5625rem;
+    min-height: 1.5625rem;
+    max-height: 1.5625rem;
+    font-size: 0.7rem;
+    color: #867f63;
+  }
+
+  .menu2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.7rem;
+    width: 100%;
+    height: 3.75rem;
+    min-height: 3.75rem;
+    max-height: 3.75rem;
+    padding: 0 3.2rem;
+  }
+
+  
+  .menu2 .logo {
+      cursor: pointer;
+  }
+  
+  .menu2 .logo img {
+      max-height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 2.5rem;
+      transition: all 0.3s;
+  }
+  
+  .menu2 .logo img:hover {
+      transform: scale(1.2);
+  }
+  
+  .menu2 .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+  }
+  
+  .menu2 .nav-links li {
+      display: inline-block;
+      
+  }
+  
+  .menu2 .nav-links li:hover {
+      transform: scale(1.1);
+  }
+  
+  .menu2 .nav-links a {
+      color: #F5F2E8;
+      text-decoration: none;
+  }
+  
+  .menu2 .nav-links li a:hover {
+      color: #d0b661;
+  }
+  
+  .menu2 .btn button {
+      font-weight: 700;
+      color: #151515;
+      padding: 0.5625rem 1.5625rem;
+      background: #F5F2E8;
+      border: none;
+      border-radius: 1.875rem;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      font-size: 0.7rem;
+  }
+  
+  .menu2 .btn button:hover {
+      background-color: #F5F2E8;
+      color: #d0b661;
+      transform: scale(1.1);
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 3.125rem;
+    height: 100vh;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: 0; /*Imagen atrás*/
+}
+
+  
+  article {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      color: #F5F2E8;
+      width: 38rem;
+      font-weight: 700;
+      margin: 0;
+  }
+  
+  .titleDes {
+      font-size: 2.5rem;
+      z-index: 1;
+  }
+  
+  .principalDescription {
+      font-size: 1.1rem;
+      z-index: 1;
+  }
+  
+  }
+  
+  /* Services styles */
+  .container-2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 1.25rem 0.625rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    .articleServices {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .titleServices {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .textServices {
+      font-size: 0.9rem;
+      color: #808080;
+    }
+
+    #services-container{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+
+    }
+    
+    .Scoment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.625rem;
+     
+      max-width: 18.75rem;
+      padding: 0.625rem;
+      text-align: center;
+    }
+    
+    .titleScoment {
+      font-weight: 700;
+      width: 100%;
+      border-bottom: 0.09375rem solid #151515;
+      margin-bottom: 0.3125rem;
+      font-size: 1.1rem;
+    }
+    
+    .imgServices {
+      width: 100%;
+      max-width: 17.5rem;
+      height: 11.25rem;
+      background-size: cover;
+    }
+    
+    .descriptionS {
+      border-top: 0.0625rem solid #b5b5a2;
+      border-bottom: 0.0625rem solid #b5b5a2;
+      padding: 0.625rem;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+  }
+  
+  /* Comments styles */
+  .container-3 {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 3rem 0;
+
+    .miniContainer-3 {
+      min-height: 25rem; 
+      background-color: whitesmoke;
+      box-shadow: 0 0.125rem 0.1875rem #b5b5a2;
+  
+    }
+    
+    .tittleComent {
+      height: 4.6875rem; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #151515;
+      letter-spacing: 0.0625rem;
+      border-bottom: 0.0625rem solid #b5b5a2;
+    }
+    
+    .coments {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .coment {
+      background-color: #f8f7f6;
+      box-shadow: 0 0.0625rem 0.125rem #808080;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+  
+      transition: transform 0.6s ease, background-color 0.6s ease, box-shadow 0.6s ease;
+      max-width: 22rem;
+  
+      padding: 1rem;
+  
+    }
+  
+    .superiorComent {
+      min-height: 3.125rem; 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .left {
+      display: flex;
+      flex-direction: row;
+      gap: 0.75rem;
+    }
+    
+    #container-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #icon-person {
+      height: 1.875rem; 
+      width: 1.875rem;
+      border-radius: 1rem;
+    }
+    
+    .right {
+      display: flex;
+      align-items: center;
+    }
+    
+    .inferiorComent {
+      padding: 0 1.25rem;
+      font-size: 0.875rem;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+    
+    .coment:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #151515;
+    color: #F5F2E8;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+    .superiorfooter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-bottom: 0.05rem solid #5a5649;
+      gap: 2rem;
+    }
+
+    .titlealtair {
+      color: #d0b661;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    .subcontainer2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    
+    .subcontainer2 nav {
+      list-style: none;
+    }
+    
+    .subcontainer2 a {
+      color: #5a5649;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    
+    #inferiorfooter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      gap: 2rem;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    body {
+        font-size: 12px; 
+    }
+  
+    .container-1 {
+      min-height: auto;
+      max-height: none;
+  
+      main {
+        padding: 6rem 2rem 2rem;
+        min-height: auto;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      article {
+        width: 100%;
+        max-width: 38rem;
+  
+        .titleDes {
+          font-size: 2rem;
+        }
+  
+        .principalDescription {
+          font-size: 1rem;
+        }
+      }
+    }
+  
+    .menu1{
+      flex-direction: column;
+    }
+  
+    .schedule, .location{
+      font-size: 0.5rem;
+    }
+  
+    .nav-links{
+    font-size: calc();
+    }
+
+    .inferiorComent{
+      font-size: 0.1rem;
+    }
+
+   #principal{
+    margin-top: 7rem;
+   }
+
+  }
+  
